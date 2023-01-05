@@ -54,7 +54,7 @@ if a == True:
         e = input("Your dog birthday: ")
         r = e.isdigit()
         if r == True:
-            if int(q) > int(w):
+            if int(q) > int(w) and int(q) > int(e):
                 print("You are", round((int(w) - int(q)) / (int(e) - int(q)), 3), "older than your dog")
                 print("However, you will only be", round((int(w) - (int(q) + 17)) / (int(e) - (int(q) + 17)), 3),
                       " times older than your dog in 17 years")
