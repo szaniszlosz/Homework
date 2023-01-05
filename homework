@@ -1,0 +1,70 @@
+print("")
+print("Just to know each other, my name is Skynet. ;) ")
+fn = input("Your first name?: ")
+ln = input("Your last name?: ")
+print("Nice to meet you", fn,ln)
+print("")
+print(fn, ln, sep=" ")
+print(fn, ln, sep="-")
+print(fn, ln, sep=";")
+print("Sorry for that, just some glitch in my code")
+print("")
+print("")
+print("Dear", fn, ln, "here is your first task:")
+print("Task 1. Just to practice my writing skills")
+m = input("Please write whatever you like: ").strip()
+j = m.rjust(30, "~")
+print(j.center(50, "%"))
+print("")
+print("")
+print("Task 2. how is it look like?")
+print("")
+n = input("Give me a number: ")
+m = int(n)
+k = input("Give me a spacer: ")
+print("thats how:",(n +k) * m)
+print("")
+print("")
+print("Task 3. A a bit complicated calc.")
+print("")
+n = input("Give me a number: ")
+while (n == ""):
+    print("You have entered an invalid number!")
+    n = input("Please give a valid number: ")
+d = input("Give the digit, between 0-9: ")
+while (d == ""):
+    print("You have enterd an invalid digit!")
+    d = input("Again, as I said: a valid digit between 0-9: ")
+print("Your number: ", n, "Your digit: ", (d))
+s = n.count(d);
+print("Your digit is", s,"times in your number")
+print("Sir, your results are served: ",round(round(s/int(d)) * int(n)))
+print("")
+print("")
+print("Task 4. Please challange me ;)")
+print("")
+t = "You have enter no number"
+z = "Please restart the program!"
+q = input("Current year: ")
+a = q.isdigit()
+if a == True:
+    w = input("Your birthday: ")
+    b = w.isdigit()
+    if b == True:
+        e = input("Your dog birthday: ")
+        r = e.isdigit()
+        if r == True:
+            if int(q) > int(w):
+                print("You are", round((int(w) - int(q)) / (int(e) - int(q)), 3), "older than your dog")
+                print("However, you will only be", round((int(w) - (int(q) + 17)) / (int(e) - (int(q) + 17)), 3),
+                      " times older than your dog in 17 years")
+                print("")
+                print("Thanks,",fn," it was fun ;), do you know where is Sarah Conror? ")
+            else:
+                print("Are you timetraveller?")
+        else:
+            print(t, "on your dog birthyear.", z)
+    else:
+        print(t, "on your birthyear.", z)
+else:
+    print(t, "on current year.", z)
